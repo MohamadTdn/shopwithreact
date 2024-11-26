@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.logo {
+  width: 50px;
+}
+
+svg {
+  padding: 0 0 0 5px;
+  font-size: 30px;
+}
+
+.active {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
