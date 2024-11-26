@@ -5,6 +5,7 @@ import ProductBanner from "../../components/ProductBanner/ProductBanner";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import LastProducts from "../../components/LastProducts/LastProducts";
+import BestProducts from "../../components/BestProducts/BestProducts";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
         </Row>
       </Container>
       <LastProducts/>
+      <BestProducts/>
     </div>
   );
 }

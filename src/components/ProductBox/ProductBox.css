@@ -1,7 +1,8 @@
 .ProductBox {
-  margin: 20px;
+  margin: 10px;
   width: 300px;
-  background-color: #999f9f;
+  background-color: #c2caca;
+  border-radius: 15px;
 }
 
 .ProductBox .product-title {

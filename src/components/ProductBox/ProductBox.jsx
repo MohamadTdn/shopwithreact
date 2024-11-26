@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import "./ProductBox.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
-export default function ProductBox({ imgSrc, title, price }) {
+export default function ProductBox({ imgSrc, title, price, slideBox }) {
   return (
     <ScrollAnimation
       animateIn="fadeIn"
       initiallyVisible={true}
       animateOnce={true}
     >
-      <div className="ProductBox text-center">
+      <div className={`ProductBox text-center ${slideBox ? 'w-75' : ''}`}>
         <img className="product-cover" src={`/${imgSrc}`} alt="" />
         <h4 className="product-title">{title}</h4>
         <h5 className="product-price">{price} $</h5>
