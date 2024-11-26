@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import ProductBanner from "../../components/ProductBanner/ProductBanner";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import LastProducts from "../../components/LastProducts/LastProducts";
 
 export default function Index() {
   return (
@@ -18,6 +19,7 @@ export default function Index() {
           <ProductBanner imgSrc={"/images/airpodimg.webp"} />
         </Row>
       </Container>
+      <LastProducts/>
     </div>
   );
 }

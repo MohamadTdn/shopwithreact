@@ -6,6 +6,10 @@ import { NavLink } from "react-router-dom";
 import "./NavMenu.css";
 import { FaSearch } from "react-icons/fa";
 import { IoBag } from "react-icons/io5";
+import { FaHome } from "react-icons/fa";
+import { PiNotebookFill } from "react-icons/pi";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
+import { CiLogin } from "react-icons/ci";
 import { memo } from "react";
 
 export default memo(function NavMenu() {
@@ -31,6 +35,7 @@ export default memo(function NavMenu() {
                 }
                 to={"/"}
               >
+                <FaHome />
                 Home
               </NavLink>
             </Nav.Link>
@@ -41,6 +46,7 @@ export default memo(function NavMenu() {
                 }
                 to={"/blog"}
               >
+                <PiNotebookFill />
                 Blog
               </NavLink>
             </Nav.Link>
@@ -51,6 +57,7 @@ export default memo(function NavMenu() {
                 }
                 to={"/products"}
               >
+                <MdOutlineProductionQuantityLimits/>
                 Products
               </NavLink>
             </Nav.Link>
@@ -61,7 +68,8 @@ export default memo(function NavMenu() {
                 }
                 to={"/register"}
               >
-                register
+                <CiLogin/>
+                Register
               </NavLink>
             </Nav.Link>
           </Nav>
