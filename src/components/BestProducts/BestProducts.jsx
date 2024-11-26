@@ -11,7 +11,7 @@ export default function BestProducts() {
         title={`best products`}
         subTitle={`the list of our best and popular products`}
       />
-      <Swiper slidesPerView={3} spaceBetween={0} className="mySwiper">
+      <Swiper slidesPerView={3} spaceBetween={30} className="mySwiper">
         <SwiperSlide>
           <ProductBox
             title={`airpod`}
