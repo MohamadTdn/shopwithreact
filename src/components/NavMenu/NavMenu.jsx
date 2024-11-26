@@ -6,8 +6,9 @@ import { NavLink } from "react-router-dom";
 import "./NavMenu.css";
 import { FaSearch } from "react-icons/fa";
 import { IoBag } from "react-icons/io5";
+import { memo } from "react";
 
-export default function NavMenu() {
+export default memo(function NavMenu() {
   return (
     <Navbar
       bg="light"
@@ -34,17 +35,32 @@ export default function NavMenu() {
               </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink className={"nav-link"} to={"/blog"}>
+              <NavLink
+                className={(link) =>
+                  link.isActive ? "nav-link active" : "nav-link"
+                }
+                to={"/blog"}
+              >
                 Blog
               </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink className={"nav-link"} to={"/products"}>
+              <NavLink
+                className={(link) =>
+                  link.isActive ? "nav-link active" : "nav-link"
+                }
+                to={"/products"}
+              >
                 Products
               </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink className={"nav-link"} to={"/register"}>
+              <NavLink
+                className={(link) =>
+                  link.isActive ? "nav-link active" : "nav-link"
+                }
+                to={"/register"}
+              >
                 register
               </NavLink>
             </Nav.Link>
@@ -57,4 +73,4 @@ export default function NavMenu() {
       </Container>
     </Navbar>
   );
-}
+});
