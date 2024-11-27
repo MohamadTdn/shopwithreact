@@ -19,3 +19,13 @@
 .footer-desc {
   display: flex;
 }
+
+.copyright {
+  background-color: #414141;
+  text-align: center;
+  color: #fff;
+}
+
+.copyright h5 {
+  padding: 15px;
+}

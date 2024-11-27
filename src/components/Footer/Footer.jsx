@@ -34,6 +34,9 @@ export default function Footer() {
           </ul>
         </Col>
       </Row>
+      <div className="copyright">
+        <h5>Created by Mohamad Tadayon</h5>
+      </div>
     </Container>
   );
 }
