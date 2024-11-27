@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Article {
+  background-color: #8f8feb;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.Article img {
+  width: 100%;
+  padding: 0 auto ;
+  border-radius: 15px;
+}

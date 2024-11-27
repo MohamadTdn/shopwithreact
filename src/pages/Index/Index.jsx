@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import LastProducts from "../../components/LastProducts/LastProducts";
 import BestProducts from "../../components/BestProducts/BestProducts";
 import './Index.css'
+import LastArticles from "../../components/LastArticles/LastArticles";
 
 export default function Index() {
   return (
@@ -24,6 +25,7 @@ export default function Index() {
       <LastProducts/>
       <BestProducts/>
       <div className="section-com"></div>
+      <LastArticles/>
     </div>
   );
 }
