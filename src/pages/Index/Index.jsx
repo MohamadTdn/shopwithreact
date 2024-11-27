@@ -8,6 +8,7 @@ import LastProducts from "../../components/LastProducts/LastProducts";
 import BestProducts from "../../components/BestProducts/BestProducts";
 import './Index.css'
 import LastArticles from "../../components/LastArticles/LastArticles";
+import Footer from "../../components/Footer/Footer";
 
 export default function Index() {
   return (
@@ -26,6 +27,7 @@ export default function Index() {
       <BestProducts/>
       <div className="section-com"></div>
       <LastArticles/>
+      <Footer/>
     </div>
   );
 }

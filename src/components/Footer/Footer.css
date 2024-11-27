@@ -1,0 +1,21 @@
+.Footer {
+  background-color: #dcdcdc;
+  margin: 20px 0 0 0;
+}
+
+.Footer ul {
+  list-style-type: none;
+}
+
+.Footer ul li {
+  padding: 10px;
+}
+
+.Footer-logo {
+  width: 210px;
+  padding: 0 20px 0 10px;
+}
+
+.footer-desc {
+  display: flex;
+}
