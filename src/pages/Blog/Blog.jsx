@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <div className='Blog'>
       <NavMenu/>
-      <Container>
+      <Container fluid>
         <Row>
           <Col lg={9} md={12} sm={12}>
             <Container>
