@@ -7,6 +7,7 @@ export default function Footer() {
     <Container fluid className="Footer">
       <Row>
         <Col lg={4} md={6} sm={12}>
+          <h5>About Us</h5>
           <div className="footer-desc">
             <img className="Footer-logo" src="/images/logo.png" alt="" />
             <p>
@@ -19,18 +20,20 @@ export default function Footer() {
         </Col>
         <Col lg={4} md={6} sm={12}>
           <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+          <h5>Pages</h5>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
           </ul>
         </Col>
         <Col lg={4} md={6} sm={12}>
           <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+          <h5>Infos</h5>
+            <li>Social Media</li>
+            <li>News</li>
+            <li>About Us</li>
+            <li>Articles</li>
           </ul>
         </Col>
       </Row>
