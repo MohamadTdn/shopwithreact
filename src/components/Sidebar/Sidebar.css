@@ -1,0 +1,16 @@
+.Sidebar {
+  margin: 20px 0;
+}
+
+.Sidebar img {
+  width: 70px;
+  border-radius: 15px;
+}
+
+.Sidebar ul {
+  list-style-type: none;
+}
+
+.Sidebar ul li {
+  padding: 15px;
+}
