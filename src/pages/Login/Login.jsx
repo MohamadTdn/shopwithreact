@@ -1,14 +1,14 @@
 import React from "react";
 import "../Register/Register.css";
-import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from "../../components/Footer/Footer";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function Login() {
   return (
     <>
-      <NavMenu />
+    <NavMenu></NavMenu>
       <div className="Register">
         <form action="#" id="register-form">
           <h4 className="register-form-title">Login</h4>
@@ -35,7 +35,7 @@ export default function Login() {
           </h5>
         </form>
       </div>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import "./ProductInfo.css";
 import { Container, Row, Col } from "react-bootstrap";
-import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from "../../components/Footer/Footer";
 import { Button } from "react-bootstrap";
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function ProductInfo() {
   return (
     <div className="ProductInfo">
-      <NavMenu />
+      <NavMenu></NavMenu>
       <Container>
         <Row>
           <Col lg={7}>
@@ -135,7 +135,7 @@ export default function ProductInfo() {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }

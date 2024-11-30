@@ -1,14 +1,14 @@
 import React from "react";
-import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from "../../components/Footer/Footer";
 import "./Register.css";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function Register() {
   return (
     <>
-      <NavMenu />
+    <NavMenu></NavMenu>
       <div className="Register">
         <form action="#" id="register-form">
           <h4 className="register-form-title">Register</h4>
@@ -49,7 +49,7 @@ export default function Register() {
           </h5>
         </form>
       </div>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }

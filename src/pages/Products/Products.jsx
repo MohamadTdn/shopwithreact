@@ -1,14 +1,14 @@
 import React from "react";
-import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from "../../components/Footer/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import ProductBox from "../../components/ProductBox/ProductBox";
 import './Products.css'
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function Products() {
   return (
     <div className="Products">
-      <NavMenu />
+      <NavMenu></NavMenu>
       <select className="filter-box">
         <option value="-1">Choose the filter</option>
         <option value="cheap">Cheap</option>
@@ -62,7 +62,7 @@ export default function Products() {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }

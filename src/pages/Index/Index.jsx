@@ -1,5 +1,4 @@
 import React from "react";
-import NavMenu from "../../components/NavMenu/NavMenu";
 import Header from "../../components/Header/Header";
 import ProductBanner from "../../components/ProductBanner/ProductBanner";
 import Container from "react-bootstrap/Container";
@@ -8,12 +7,13 @@ import LastProducts from "../../components/LastProducts/LastProducts";
 import BestProducts from "../../components/BestProducts/BestProducts";
 import './Index.css'
 import LastArticles from "../../components/LastArticles/LastArticles";
-import Footer from "../../components/Footer/Footer";
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function Index() {
   return (
     <div>
-      <NavMenu />
+      <NavMenu></NavMenu>
       <Header />
       <Container fluid className="mt-4 mb-4">
         <Row>
@@ -27,7 +27,7 @@ export default function Index() {
       <BestProducts/>
       <div className="section-com"></div>
       <LastArticles/>
-      <Footer/>
+      <Footer></Footer>
     </div>
   );
 }

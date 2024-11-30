@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import NavMenu from "../../components/NavMenu/NavMenu";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Footer from "../../components/Footer/Footer";
 import './ArticleInfo.css'
+import NavMenu from "../../components/NavMenu/NavMenu";
+import Footer from '../../components/Footer/Footer'
 
 export default function ArticleInfo() {
   return (
     <div className="ArticleInfo">
-      <NavMenu />
+      <NavMenu/>
       <Container>
         <Row>
           <Col lg={9}>
@@ -58,7 +58,7 @@ export default function ArticleInfo() {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
