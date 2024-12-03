@@ -1,11 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProductBox from "../../components/ProductBox/ProductBox";
-import './Products.css'
+import "./Products.css";
 import NavMenu from "../../components/NavMenu/NavMenu";
-import Footer from '../../components/Footer/Footer'
+import Footer from "../../components/Footer/Footer";
+import { useQuery } from "react-query";
+import api from "../../Axios/Config";
 
 export default function Products() {
+  const { data } = useQuery(["Products"], () => {
+    return api.get("/products").then((res) => {
+      return res.data;
+    });
+  });
+
   return (
     <div className="Products">
       <NavMenu></NavMenu>
@@ -18,48 +26,13 @@ export default function Products() {
       </select>
       <Container>
         <Row>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
+          {data?.map((product) => {
+            return (
+              <Col lg={4} md={6} sm={12}>
+                <ProductBox {...product} />
+              </Col>
+            );
+          })}
         </Row>
       </Container>
       <Footer></Footer>
