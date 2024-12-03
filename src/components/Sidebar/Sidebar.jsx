@@ -29,28 +29,23 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="sidebar-item">
-        <h5 className="sidebar-title ps-4">Last Articles</h5>
+        <h5 className="sidebar-title ps-4">Best Articles</h5>
         <ul>
-          <li>
-            <img src="/images/airpodimg.webp" alt="" />
-            <span>article title</span>
-          </li>
-          <div className="divider"></div>
-          <li>
-            <img src="/images/airpodimg.webp" alt="" />
-            <span>article title</span>
-          </li>
-          <div className="divider"></div>
-          <li>
-            <img src="/images/airpodimg.webp" alt="" />
-            <span>article title</span>
-          </li>
-          <div className="divider"></div>
-          <li>
-            <img src="/images/airpodimg.webp" alt="" />
-            <span>article title</span>
-          </li>
-          <div className="divider"></div>
+          {data
+            ?.filter((article) => {
+              return article.score > 3;
+            })
+            .map((article) => {
+              return (
+                <>
+                  <li>
+                    <img src={article.imgSrc} alt="" />
+                    <span>{article.title}</span>
+                  </li>
+                  <div className="divider"></div>
+                </>
+              );
+            })}
         </ul>
       </div>
     </div>

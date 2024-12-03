@@ -64,6 +64,7 @@
       "title": "best methods for work",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
       "author": "Mohamad Tadayon",
+      "score": 3,
       "body": ""
     },
     {
@@ -72,6 +73,7 @@
       "title": "best startups",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
       "author": "Amin",
+      "score": 4,
       "body": ""
     },
     {
@@ -80,6 +82,7 @@
       "title": "how to work remote",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
       "author": "Amir",
+      "score": 5,
       "body": ""
     }
   ],
