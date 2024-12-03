@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Container, Row, Col } from "react-bootstrap";
@@ -13,6 +13,7 @@ export default function BestProducts() {
       return res.data;
     });
   });
+
   return (
     <div className="BestProducts">
       <SectionHeader
@@ -30,10 +31,7 @@ export default function BestProducts() {
                 return (
                   <Col lg={4} md={12} sm={12}>
                     <SwiperSlide>
-                      <ProductBox
-                        {...filteredProduct}
-                        slideBox={true}
-                      />
+                      <ProductBox {...filteredProduct} slideBox={true} />
                     </SwiperSlide>
                   </Col>
                 );

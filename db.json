@@ -57,6 +57,32 @@
       "score": 5
     }
   ],
+  "articles": [
+    {
+      "id": "1",
+      "imgSrc": "images/work.jfif",
+      "title": "best methods for work",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
+      "author": "Mohamad Tadayon",
+      "body": ""
+    },
+    {
+      "id": "2",
+      "imgSrc": "images/startup.jfif",
+      "title": "best startups",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
+      "author": "Amin",
+      "body": ""
+    },
+    {
+      "id": "3",
+      "imgSrc": "images/remote.jfif",
+      "title": "how to work remote",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, porro, sapiente eos consequuntur omnis expedita sunt soluta, voluptatibus mollitia culpa id saepe excepturi obcaecati! Ex quia dolore amet perferendis consequuntur?",
+      "author": "Amir",
+      "body": ""
+    }
+  ],
   "comments": [
     { "id": "1", "text": "a comment about post 1", "postId": "1" },
     { "id": "2", "text": "another comment about post 1", "postId": "1" }

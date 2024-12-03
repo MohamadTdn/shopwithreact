@@ -3,8 +3,16 @@ import "./LastArticles.css";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import { Container, Row, Col } from "react-bootstrap";
 import ArticleBox from "../ArticleBox/ArticleBox";
+import { useQuery } from "react-query";
+import api from "../../Axios/Config";
 
 export default function LastArticles() {
+  const { data } = useQuery(["Articles"], () => {
+    return api.get("/articles").then((res) => {
+      return res.data;
+    });
+  });
+
   return (
     <div className="LastArticles">
       <SectionHeader
@@ -14,15 +22,13 @@ export default function LastArticles() {
       />
       <Container fluid>
         <Row>
-          <Col lg={4} md={6} sm={12}>
-            <ArticleBox />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ArticleBox />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ArticleBox />
-          </Col>
+          {data?.slice(0, 3).map((article) => {
+            return (
+              <Col lg={4} md={6} sm={12}>
+                <ArticleBox {...article} />
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </div>
