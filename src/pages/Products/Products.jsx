@@ -13,8 +13,8 @@ export default function Products() {
 
   useEffect(() => {
     api.get("/products").then((res) => {
-      setOrderedProducts(res.data)
       setProducts(res.data);
+      setOrderedProducts(res.data);
     });
   }, []);
 
@@ -29,7 +29,7 @@ export default function Products() {
         break;
       }
       case "oldest": {
-        const oldProducts = products.reverse();
+        const oldProducts = products.slice().reverse();
         setOrderedProducts(oldProducts);
         break;
       }
@@ -49,7 +49,6 @@ export default function Products() {
       }
       default: {
         setOrderedProducts(products);
-
       }
     }
   }, [status]);
