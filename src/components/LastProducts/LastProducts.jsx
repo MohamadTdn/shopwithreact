@@ -5,8 +5,16 @@ import ProductBox from "../ProductBox/ProductBox";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Col } from "react-bootstrap";
+import { useQuery } from "react-query";
+import api from "../../Axios/Config";
 
 export default function LastProducts() {
+  const { data } = useQuery(["Products"], () => {
+    return api.get("/products").then((res) => {
+      return res.data;
+    });
+  });
+
   return (
     <div>
       <SectionHeader
@@ -16,48 +24,13 @@ export default function LastProducts() {
       />
       <Container>
         <Row>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ProductBox
-              title={`airpod`}
-              price={200}
-              imgSrc={`images/airpodimg.webp`}
-            />
-          </Col>
+          {data?.map((product) => {
+            return (
+              <Col key={product.id} lg={4} md={6} sm={12}>
+                <ProductBox {...product} />
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </div>

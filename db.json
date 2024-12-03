@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "airpod",
+      "price": 100,
+      "imgSrc": "images/airpodimg.webp",
+      "count": 4,
+      "score": 2
+    },
+    {
+      "id": "2",
+      "title": "Sport Shoe",
+      "price": 200,
+      "imgSrc": "images/shoepro.jfif",
+      "count": 16,
+      "score": 3
+    },
+    {
+      "id": "3",
+      "title": "Ps5",
+      "price": 500,
+      "imgSrc": "images/ps5.jfif",
+      "count": 20,
+      "score": 5
+    },
+    {
+      "id": "4",
+      "title": "Ps4",
+      "price": 200,
+      "imgSrc": "images/ps4.jfif",
+      "count": 5,
+      "score": 3
+    },
+    {
+      "id": "5",
+      "title": "S24 Ultra",
+      "price": 700,
+      "imgSrc": "images/s24.jfif",
+      "count": 10,
+      "score": 5
+    },
+    {
+      "id": "6",
+      "title": "Iphone 15",
+      "price": 900,
+      "imgSrc": "images/iphone.jfif",
+      "count": 3,
+      "score": 5
+    },
+    {
+      "id": "7",
+      "title": "The Last Of Us Part 2",
+      "price": 79,
+      "imgSrc": "images/tlou2.jfif",
+      "count": 9,
+      "score": 5
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "users": {
+    "name": "typicode"
+  }
+}
