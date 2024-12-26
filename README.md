@@ -2,7 +2,7 @@
 
 ### a shop website with react js and packages 
 
-#### this app focus on data fetching and component base design . this app have 7 pages in spa . its all responsive 
+#### this app focus on data fetching and component base design and work with api and database. this app have 7 pages in spa . its all responsive 
 
 ## pages 
 1. Home
