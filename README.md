@@ -2,7 +2,12 @@
 
 ### a shop website with react js and packages 
 
-#### this app focus on data fetching and component base design and work with api and database. this app have 7 pages in spa . its all responsive 
+#### this app focus on data fetching and component base design and work with api and database. you can learn routing and work with params and dynami  pages with this app .this app have 7 pages in spa . its all responsive 
+#### you can clone it or setup dependencies and run this commant
+
+```
+npm run dev
+```
 
 ## pages 
 1. Home
@@ -25,3 +30,5 @@
 10. swiper
 11. json-server
 12. react-bootstrap
+
+## Create and UI by : Mohamad Tadayon 
