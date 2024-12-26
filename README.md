@@ -2,7 +2,7 @@
 
 ### a shop website with react js and packages 
 
-#### this app focus on data fetching and component base design and work with api and database. you can learn routing and work with params and dynamic  pages with this app .this app have 7 pages in spa . its all responsive . you can see data catching and work with react-query package
+#### this app focus on data fetching and component base design and work with api and database. you can learn routing and work with params and dynamic  pages with this app .this app have 7 pages in spa . its all responsive . you can see data catching and work with react-query package in this project
 
 #### you can clone it or setup dependencies and run this commant
 
