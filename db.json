@@ -87,10 +87,41 @@
     }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
-  "users": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "mohamad",
+      "username": "mohamadtdn",
+      "email": "mohamad@@gmail.com",
+      "phone": "09301639830",
+      "password": "mohamadtdn1379"
+    },
+    {
+      "id": "0c66f147-780f-4762-9662-f231bab67f91",
+      "name": "aliahmadi",
+      "username": "ali_ahmadi",
+      "email": "ali@gmail.com",
+      "phone": 920202020,
+      "password": "ali12345678"
+    },
+    {
+      "id": "0529b0c9-86c5-4473-b8f9-692f6f2527b8",
+      "name": "aminamiri",
+      "username": "aminamiri12",
+      "email": "amin@gmail.com",
+      "phone": 94901234567,
+      "password": "aminamiri1212"
+    }
+  ]
 }
