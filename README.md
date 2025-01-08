@@ -31,5 +31,7 @@ npm run dev
 10. swiper
 11. json-server
 12. react-bootstrap
+13. formik
+14. yup
 
 ## Create and UI by : Mohamad Tadayon 
