@@ -52,4 +52,8 @@ npm run dev
 
 ![Login/Register Page](/public/demos/loginregister.png)
 
+### Single Product
+
+![single product page](/public/demos/single%20product.png)
+
 ## Create and UI by : Mohamad Tadayon 
