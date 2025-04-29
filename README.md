@@ -34,4 +34,22 @@ npm run dev
 13. formik
 14. yup
 
+### images of Demo :
+
+### Home Page
+
+![Home Page](/public/demos/Home.png)
+
+### Shop
+
+![Shop Page](/public/demos/Shop.png)
+
+### Blog
+
+![Blog Page](/public/demos/Blog.png)
+
+### Login/Register
+
+![Login/Register Page](/public/demos/loginregister.png)
+
 ## Create and UI by : Mohamad Tadayon 
